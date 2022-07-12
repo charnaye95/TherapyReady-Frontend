@@ -1,8 +1,14 @@
 import React from 'react'
 
-function Therapists() {
+function Therapists({therapists}) {
   return (
-    <div>Therapists</div>
+    <div>
+        <p>{therapists.map(therapist =>
+      <div>
+         {therapist.name} 
+         </div>
+         )}</p>
+    </div>
   )
 }
 

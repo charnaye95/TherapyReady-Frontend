@@ -1,9 +1,15 @@
 import React from 'react'
 
-function Clinics() {
+function Clinics({clinics}) {
   return (
-    <div>Clinics</div>
-  )
-}
+    <div>
+    <p>{clinics.map(clinic => 
+        <div>
+          {clinic.name} 
+          
+        </div>)}
+        </p>  
+        </div>
+)}
 
 export default Clinics

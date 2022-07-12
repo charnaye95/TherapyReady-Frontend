@@ -1,10 +1,12 @@
 // import logo from './logo.svg';
 import './App.css';
-import './index.css';
+// import './index.css';
 import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
+import About from './Pages/About';
 import Clinics from './Pages/Clinics';
 import Therapists from './Pages/Therapists';
+import Assessments from './Pages/Assessments';
 // import { Navigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
@@ -37,27 +39,17 @@ function App() {
 
   if (!clinics && !therapists) return <h1>"No data rendered"</h1>
 
-  
+
   return (
     <div className="App">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/clinics" element={<Clinics />} />
-        <Route path="/therapists" element={<Therapists />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/clinics" element={<Clinics clinics={clinics} />} />
+        <Route path="/therapists" element={<Therapists therapists={therapists} />} />
+        <Route path="/assessments" element={<Assessments />} />
       </Routes>
-      <p>{clinics.map(clinic => 
-      <div>
-        {clinic.name} 
-        
-      </div>)}
-      </p>
-      <br></br>
-      <p>{therapists.map(therapist =>
-      <div>
-         {therapist.name} 
-         </div>
-         )}</p>
     </div>
   );
 }
