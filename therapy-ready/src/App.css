@@ -9,7 +9,7 @@
 }
 .title {
   text-align: center;
-  color: #007A45;
+  color: #007a45;
   font-size: x-large;
   font-weight: bold;
 }
@@ -36,4 +36,33 @@
   text-align: center;
   border: #211c1e;
   border-style: solid;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+h1 {
+  font-weight: bolder;
+  font-size: x-large;
+}
+.featured {
+  text-align: center;
+}
+.search-button {
+  background-color: #ece2d0;
+  border-radius: 25%;
+  padding: 5px;
+  margin-left: 5px;
+}
+.assessment-button {
+  text-align: center;
+  font-size: xx-large;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #211c1e;
+  background-color: #007a45;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
