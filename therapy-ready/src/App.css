@@ -6,6 +6,7 @@
   font-weight: bold;
   color: #211c1e;
   margin-bottom: 2vw;
+  font-size: 2vw;
 }
 .title {
   text-align: center;
@@ -17,12 +18,14 @@
   display: flex;
   gap: 15px;
   font-size: 2vw;
+  align-items: center;
 }
 .signup-login-nav {
   display: flex;
-  align-items: flex-end;
   gap: 15px;
   font-size: 2vw;
+  align-items: center;
+
 }
 .test-container {
   display: flex;
@@ -65,4 +68,9 @@ h1 {
   padding-bottom: 15vh;
   margin-left: 10vw;
   margin-right: 10vw;
+}
+.logo {
+  display: flex;
+  max-block-size: 8vw;
+  align-items: center;
 }
