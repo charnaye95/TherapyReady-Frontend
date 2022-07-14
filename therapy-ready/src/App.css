@@ -1,7 +1,7 @@
 body {
-font-family: 'Oranienbaum', serif;
-/* font-family: 'Libre Caslon Display', serif; */
-/* background-color: #ece2d0; */
+  font-family: "Oranienbaum", serif;
+  /* font-family: 'Libre Caslon Display', serif; */
+  /* background-color: #ece2d0; */
 }
 
 .navbar {
@@ -11,7 +11,7 @@ font-family: 'Oranienbaum', serif;
   padding: 4vw;
   font-weight: bold;
   color: #211c1e;
-  margin-bottom: 2vw;
+  /* margin-bottom: 2vw; */
   font-size: 2vw;
 }
 .footer {
@@ -25,13 +25,15 @@ font-family: 'Oranienbaum', serif;
   text-align: center;
 }
 .footer-text {
-  font-size:small;
+  font-size: small;
+  font-weight: bold;
 }
 .title {
   text-align: center;
   color: #007a45;
   font-size: xx-large;
   font-weight: bold;
+  margin-bottom: 2vh;
 }
 .pages {
   display: flex;
@@ -44,7 +46,6 @@ font-family: 'Oranienbaum', serif;
   gap: 15px;
   font-size: 2vw;
   align-items: center;
-
 }
 .test-container {
   display: flex;
@@ -52,12 +53,15 @@ font-family: 'Oranienbaum', serif;
   justify-content: space-evenly;
 }
 .test-container div {
-width: 33%;
-padding-bottom: 3vh;
-
+  width: 33%;
+  margin-bottom: 3vh;
+  /* border: #211c1e;
+border-style: solid;
+border-width: thin; */
+  text-align: center;
 }
 .category {
-  font-weight: 600;
+  font-weight: bold;
   font-size: larger;
 }
 .searchbar {
@@ -75,6 +79,8 @@ h1 {
 }
 .featured {
   text-align: center;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
 }
 .search-button {
   background-color: #ece2d0;
@@ -85,14 +91,15 @@ h1 {
 .assessment-button {
   text-align: center;
   font-size: xx-large;
-  border-radius: 50%;
+  font-weight: 600;
   border-style: solid;
   border-color: #211c1e;
-  background-color: #007a45;
-  padding-top: 15vh;
-  padding-bottom: 15vh;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  background-image: url("./Assets/umit-bulut-qbTC7ZwJB64-unsplash.jpg");
+  padding-top: 20vh;
+  padding-bottom: 20vh;
 }
 .logo {
   display: flex;
@@ -105,4 +112,17 @@ h1 {
   font-size: large;
   font-weight: 600;
   letter-spacing: 2px;
+}
+.search-block {
+  background-image: url("./Assets/priscilla-du-preez-aPa843frIzI-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+.clinic {
+  display: flex;
+}
+.clinic-image {
+  display: flex;
 }

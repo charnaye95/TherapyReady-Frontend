@@ -18,30 +18,24 @@ function Assessments() {
               </a>
               <br></br>
               <a
+                href="https://www.mind-diagnostics.org/adhd-test"
+                className="test-link"
+              >
+                Mind Diagnostics
+              </a>
+              <br></br>
+              <a
+                href="https://psychcentral.com/quizzes/adhd-quiz"
+                className="test-link"
+              >
+                PsychCentral
+              </a>
+              <br></br>
+              <a
                 href="https://www.psychologytoday.com/us/tests/health/adhdattention-deficit-disorder-test"
                 className="test-link"
               >
                 Psychology Today
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <p className="category">Alcohol Use</p>
-          <ul>
-            <li>
-              <a
-                href="https://screening.mhanational.org/screening-tools/addiction/?ref"
-                className="test-link"
-              >
-                Mental Health America
-              </a>
-              <br></br>
-              <a
-                href="https://screening.mentalhealthscreening.org/ga/screening/59372"
-                className="test-link"
-              >
-                Mindwise
               </a>
             </li>
           </ul>
@@ -64,6 +58,27 @@ function Assessments() {
               >
                 Mindwise
               </a>
+              <br></br>
+              <a
+                href="https://www.mind-diagnostics.org/anxiety-test"
+                className="test-link"
+              >
+                Mind Diagnostics
+              </a>
+              <br></br>
+              <a
+                href="https://psychcentral.com/quizzes/anxiety-quiz"
+                className="test-link"
+              >
+                PsychCentral
+              </a>
+              <br></br>
+              <a
+                href="https://www.talkspace.com/assessments/anxiety-test"
+                className="test-link"
+              >
+                Talkspace
+              </a>
             </li>
           </ul>
         </div>
@@ -72,13 +87,6 @@ function Assessments() {
           <p className="category">Bipolar</p>
           <ul>
             <li>
-              <a
-                href="https://www.psychologytoday.com/us/tests/health/bipolar-depression-test"
-                className="test-link"
-              >
-                Psychology Today
-              </a>
-              <br></br>
               <a
                 href="https://screening.mhanational.org/screening-tools/bipolar/?ref"
                 className="test-link"
@@ -91,6 +99,27 @@ function Assessments() {
                 className="test-link"
               >
                 Mindwise
+              </a>
+              <br></br>
+              <a
+                href="https://psychcentral.com/quizzes/bipolar-quiz"
+                className="test-link"
+              >
+                PsychCentral
+              </a>
+              <br></br>
+              <a
+                href="https://www.psychologytoday.com/us/tests/health/bipolar-depression-test"
+                className="test-link"
+              >
+                Psychology Today
+              </a>
+              <br></br>
+              <a
+                href="https://www.talkspace.com/assessments/bipolar-disorder-test"
+                className="test-link"
+              >
+                Talkspace
               </a>
             </li>
           </ul>
@@ -108,6 +137,13 @@ function Assessments() {
               </a>
               <br></br>
               <a
+                href="https://www.mind-diagnostics.org/depression-test"
+                className="test-link"
+              >
+                Mind Diagnostics
+              </a>
+              <br></br>
+              <a
                 href="https://screening.mentalhealthscreening.org/ga/screening/59371"
                 className="test-link"
               >
@@ -115,31 +151,17 @@ function Assessments() {
               </a>
               <br></br>
               <a
-                href="https://screening.mentalhealthscreening.org/ga/screening/59375"
+                href="https://psychcentral.com/quizzes/depression-quiz"
                 className="test-link"
               >
-                Mindwise (Teen)
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="category">Drug Use</p>
-          <ul>
-            <li>
-              <a
-                href="https://screening.mhanational.org/screening-tools/addiction/?ref"
-                className="test-link"
-              >
-                Mental Health America
+                PsychCentral
               </a>
               <br></br>
               <a
-                href="https://screening.mentalhealthscreening.org/ga/screening/59383"
+                href="https://www.talkspace.com/assessments/depression-test"
                 className="test-link"
               >
-                Mindwise
+                Talkspace
               </a>
             </li>
           </ul>
@@ -162,6 +184,20 @@ function Assessments() {
               >
                 Mindwise
               </a>
+              <br></br>
+              <a
+                href="https://www.mind-diagnostics.org/eating_disorder-test"
+                className="test-link"
+              >
+                Mind Diagnostics
+              </a>
+              <br></br>
+              <a
+                href="https://psychcentral.com/quizzes/eating-disorders-quiz"
+                className="test-link"
+              >
+                PsychCentral
+              </a>
             </li>
           </ul>
         </div>
@@ -171,6 +207,13 @@ function Assessments() {
           <ul>
             <li>
               <a
+                href="https://www.mind-diagnostics.org/gambling_addiction-test"
+                className="test-link"
+              >
+                Mind Diagnostics
+              </a>
+              <br></br>
+              <a
                 href="https://screening.mentalhealthscreening.org/ga/screening/59381"
                 className="test-link"
               >
@@ -179,7 +222,35 @@ function Assessments() {
             </li>
           </ul>
         </div>
-       
+
+        <div>
+          <p className="category">OCD</p>
+          <ul>
+            <li>
+              <a
+                href="https://www.mind-diagnostics.org/ocd-test"
+                className="test-link"
+              >
+                Mind Diagnostics
+              </a>
+              <br></br>
+              <a
+                href="https://psychcentral.com/quizzes/ocd-quiz#1"
+                className="test-link"
+              >
+                PsychCentral
+              </a>
+              <br></br>
+              <a
+                href="https://www.talkspace.com/assessments/obsessive-compulsive-disorder-test"
+                className="test-link"
+              >
+                Talkspace
+              </a>
+            </li>
+          </ul>
+        </div>
+
         <div>
           <p className="category">Postpartum</p>
           <ul>
@@ -189,6 +260,27 @@ function Assessments() {
                 className="test-link"
               >
                 Mental Health America
+              </a>
+              <br></br>
+              <a
+                href="https://www.mind-diagnostics.org/postpartum_depression-test"
+                className="test-link"
+              >
+                Mind Diagnostics
+              </a>
+              <br></br>
+              <a
+                href="https://psychcentral.com/quizzes/postpartum-depression-quiz"
+                className="test-link"
+              >
+                PsychCentral
+              </a>
+              <br></br>
+              <a
+                href="https://www.talkspace.com/assessments/postpartum-depression-test"
+                className="test-link"
+              >
+                Talkspace
               </a>
             </li>
           </ul>
@@ -203,6 +295,13 @@ function Assessments() {
                 className="test-link"
               >
                 Mental Health America
+              </a>
+              <br></br>
+              <a
+                href="https://www.mind-diagnostics.org/psychosis-test"
+                className="test-link"
+              >
+                Mind Diagnostics
               </a>
               <br></br>
               <a
@@ -232,6 +331,27 @@ function Assessments() {
               >
                 Mindwise
               </a>
+              <br></br>
+              <a
+                href="https://www.mind-diagnostics.org/ptsd-test"
+                className="test-link"
+              >
+                Mind Diagnostics
+              </a>
+              <br></br>
+              <a
+                href="https://psychcentral.com/quizzes/ptsd-quiz"
+                className="test-link"
+              >
+                PsychCentral
+              </a>
+              <br></br>
+              <a
+                href="https://www.talkspace.com/assessments/ptsd-test"
+                className="test-link"
+              >
+                Talkspace
+              </a>
             </li>
           </ul>
         </div>
@@ -240,27 +360,34 @@ function Assessments() {
           <p className="category">Substance Use</p>
           <ul>
             <li>
-              <a
-                href="https://screening.mentalhealthscreening.org/ga/screening/59378"
+          <a
+                href="https://screening.mhanational.org/screening-tools/addiction/?ref"
                 className="test-link"
               >
-                Mindwise
+                Mental Health America - Alcohol Use
               </a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="category">Well-Being</p>
-          <ul>
-            <li>
+              <br></br>
               <a
-                href="https://screening.mentalhealthscreening.org/ga/screening/59382"
+                href="https://screening.mentalhealthscreening.org/ga/screening/59372"
                 className="test-link"
               >
-                Mindwise
+                Mindwise - Alcohol Use
               </a>
-            </li>
+              <br></br>
+              <a
+                href="https://screening.mhanational.org/screening-tools/addiction/?ref"
+                className="test-link"
+              >
+                Mental Health America - Drug Use
+              </a>
+              <br></br>
+              <a
+                href="https://screening.mentalhealthscreening.org/ga/screening/59383"
+                className="test-link"
+              >
+                Mindwise - Drug Use
+              </a>
+              </li>
           </ul>
         </div>
 
@@ -273,6 +400,13 @@ function Assessments() {
                 className="test-link"
               >
                 Mindwise
+              </a>
+              <br></br>
+              <a
+                href="https://www.psychologytoday.com/us/tests/health/mental-health-assessment"
+                className="test-link"
+              >
+                Psychology Today
               </a>
             </li>
           </ul>
