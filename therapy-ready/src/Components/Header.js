@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../Assets/brain.png";
 
-function Navbar() {
+function Header() {
   return (
     <div>
       <nav className="navbar">
@@ -44,4 +44,4 @@ function Navbar() {
     </div>
   );
 }
-export default Navbar;
+export default Header;

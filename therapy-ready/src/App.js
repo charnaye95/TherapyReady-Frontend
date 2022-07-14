@@ -1,12 +1,13 @@
 // import logo from './logo.svg';
 import './App.css';
 // import './index.css';
-import Navbar from './Components/Navbar';
+import Header from './Components/Header';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Clinics from './Pages/Clinics';
 import Therapists from './Pages/Therapists';
 import Assessments from './Pages/Assessments';
+import Footer from './Components/Footer';
 // import { Navigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
@@ -42,7 +43,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -50,6 +51,7 @@ function App() {
         <Route path="/therapists" element={<Therapists therapists={therapists} />} />
         <Route path="/assessments" element={<Assessments />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
