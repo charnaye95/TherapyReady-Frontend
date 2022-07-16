@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
 function Home({ clinics, therapists }) {
+
+  const [searchString, setSearchString] = useState('');
+
   return (
     <div>
       <div className="search-block">
         <div className="searchbar">
-          <h1>
+          {/* <h1>
             ____________________
             <button className="search-button">Search</button>
-          </h1>
+          </h1> */}
+          <form>
+            <input type='text'></input>
+            <br></br>
+            <br></br>
+            <button className="search-button">Clinic Search</button>
+            <button className="search-button">Therapist Search</button>
+          </form>
         </div>
       </div>
 
@@ -28,6 +38,11 @@ function Home({ clinics, therapists }) {
       </div>
       <div className="featured">
         <h2>Featured Therapists</h2>
+        <p className="featured-therapists">
+          {therapists.slice(2).map((therapist) => (
+            <div>{therapist.name}</div>
+          ))}
+        </p>
       </div>
 
       <Link to="/assessments">
