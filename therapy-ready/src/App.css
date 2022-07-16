@@ -120,9 +120,30 @@ h1 {
   padding-top: 20vh;
   padding-bottom: 20vh;
 }
-.clinic {
+.featured-clinics {
   display: flex;
 }
 .clinic-image {
   display: flex;
+}
+.clinics-list {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  text-align: center;
+  border: black;
+}
+.therapist-picture {
+  width: 15%;
+  height: 15%;
+}
+.info {
+  text-align: center;
+}
+.therapists-list {
+  text-align: justify;
+  display: flex;
+  border: #211c1e;
+  border-style:solid;
+  margin: 5px;
 }

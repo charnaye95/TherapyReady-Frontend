@@ -20,7 +20,7 @@ function Home({ clinics, therapists }) {
         {/* <img src=></img>
         <img src=></img> */}
         </div>
-        <p className="clinic">
+        <p className="featured-clinics">
           {clinics.slice(2).map((clinic) => (
             <div>{clinic.name}</div>
           ))}
