@@ -122,9 +122,19 @@ h1 {
 }
 .featured-clinics {
   display: flex;
+  justify-content: space-around;
+}
+.featured-therapists {
+  display: flex;
+  justify-content: space-around;
 }
 .clinic-image {
-  display: flex;
+  height: 2in;
+  width: 3in;
+}
+.therapist-image {
+  height: 3in;
+  width: 2in;
 }
 .clinics-list {
   display: flex;
