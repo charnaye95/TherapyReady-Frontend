@@ -6,7 +6,8 @@ body {
 
 .navbar {
   display: flex;
-  background-color: #ef8557;
+  /* background-color: #ef8557; */
+  background-color: #7088c5;
   justify-content: space-between;
   padding: 4vw;
   font-weight: bold;
@@ -15,7 +16,8 @@ body {
   font-size: 2vw;
 }
 .footer {
-  background-color: #ef8557;
+  /* background-color: #ef8557; */
+  background-color: #7088c5;
   justify-content: space-between;
   padding: 3vw;
   font-weight: bold;
@@ -79,8 +81,8 @@ h1 {
 }
 .featured {
   text-align: center;
-  padding-top: 20vh;
-  padding-bottom: 20vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 .search-button {
   background-color: #ece2d0;

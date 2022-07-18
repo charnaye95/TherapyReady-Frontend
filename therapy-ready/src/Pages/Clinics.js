@@ -3,9 +3,10 @@ import React from "react";
 function Clinics({ clinics }) {
   return (
     <div>
-      <p>
+      <div>
         {clinics.map((clinic) => (
           <div className="clinics-list" key={clinic.id}>
+            <img src={clinic.image} className='clinic-image'></img>
             <p>
               <b>{clinic.name}</b>
             </p>
@@ -14,7 +15,9 @@ function Clinics({ clinics }) {
               {clinic.city}, {clinic.state}
             </p>
             <p>Phone: {clinic.phone_number}</p>
-            <p>Support Groups? {clinic.support_groups === true ? (
+            <p>
+              Support Groups?{" "}
+              {clinic.support_groups === true ? (
                 <input type={"checkbox"} checked></input>
               ) : (
                 <input type={"checkbox"}></input>
@@ -23,7 +26,7 @@ function Clinics({ clinics }) {
             <br></br>
           </div>
         ))}
-      </p>
+      </div>
     </div>
   );
 }

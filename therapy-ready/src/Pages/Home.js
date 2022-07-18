@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Searchbar from "../Components/Searchbar";
 
 function Home({ clinics, therapists }) {
   const [searchString, setSearchString] = useState("");
@@ -7,11 +8,12 @@ function Home({ clinics, therapists }) {
   return (
     <div>
       <div className="search-block">
-        <div className="searchbar">
-          {/* <h1>
+        <Searchbar />
+        {/* <div className="searchbar">
+          <h1>
             ____________________
             <button className="search-button">Search</button>
-          </h1> */}
+          </h1>
           <form>
             <input type="text"></input>
             <br></br>
@@ -19,7 +21,7 @@ function Home({ clinics, therapists }) {
             <button className="search-button">Clinic Search</button>
             <button className="search-button">Therapist Search</button>
           </form>
-        </div>
+        </div> */}
       </div>
 
       <div className="featured">
@@ -28,7 +30,11 @@ function Home({ clinics, therapists }) {
         <p className="featured-clinics">
           {clinics.slice(2).map((clinic) => (
             <div>
-              <img src={clinic.image} alt="clinic" className="clinic-image"></img>
+              <img
+                src={clinic.image}
+                alt="clinic"
+                className="clinic-image"
+              ></img>
               <h2>{clinic.name}</h2>
             </div>
           ))}
@@ -40,7 +46,11 @@ function Home({ clinics, therapists }) {
         <p className="featured-therapists">
           {therapists.slice(2).map((therapist) => (
             <div>
-              <img src={therapist.image} alt="therapist" className="therapist-image"></img>
+              <img
+                src={therapist.image}
+                alt="therapist"
+                className="therapist-image"
+              ></img>
               <h2>{therapist.name}</h2>
             </div>
           ))}
