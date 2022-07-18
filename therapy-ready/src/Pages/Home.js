@@ -3,31 +3,17 @@ import { Link } from "react-router-dom";
 import Searchbar from "../Components/Searchbar";
 
 function Home({ clinics, therapists }) {
-  const [searchString, setSearchString] = useState("");
 
   return (
     <div>
       <div className="search-block">
-        <Searchbar />
-        {/* <div className="searchbar">
-          <h1>
-            ____________________
-            <button className="search-button">Search</button>
-          </h1>
-          <form>
-            <input type="text"></input>
-            <br></br>
-            <br></br>
-            <button className="search-button">Clinic Search</button>
-            <button className="search-button">Therapist Search</button>
-          </form>
-        </div> */}
+        <Searchbar clinics={clinics} therapists ={therapists}/>
       </div>
 
       <div className="featured">
         <h2>Featured Clinics</h2>
         <br></br>
-        <p className="featured-clinics">
+        <div className="featured-clinics">
           {clinics.slice(2).map((clinic) => (
             <div>
               <img
@@ -35,15 +21,15 @@ function Home({ clinics, therapists }) {
                 alt="clinic"
                 className="clinic-image"
               ></img>
-              <h2>{clinic.name}</h2>
+              <p>{clinic.name}</p>
             </div>
           ))}
-        </p>
+        </div>
       </div>
       <div className="featured">
         <h2>Featured Therapists</h2>
         <br></br>
-        <p className="featured-therapists">
+        <div className="featured-therapists">
           {therapists.slice(2).map((therapist) => (
             <div>
               <img
@@ -51,10 +37,10 @@ function Home({ clinics, therapists }) {
                 alt="therapist"
                 className="therapist-image"
               ></img>
-              <h2>{therapist.name}</h2>
+              <p>{therapist.name}</p>
             </div>
           ))}
-        </p>
+        </div>
       </div>
 
       <Link to="/assessments">

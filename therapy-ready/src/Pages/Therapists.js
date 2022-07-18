@@ -15,6 +15,7 @@ function Therapists({ therapists }) {
               <p>
                 <b>{therapist.name}</b>
               </p>
+              {console.log(therapist.clinic)}
               <p>
                 <b>Bio:</b> {therapist.bio}
               </p>

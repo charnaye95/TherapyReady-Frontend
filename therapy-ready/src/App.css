@@ -159,3 +159,14 @@ h1 {
   border-style:solid;
   margin: 5px;
 }
+.searchbar input {
+  background-color: white;
+  font-size: medium;
+  width: 30vw;
+  height: 6vh;
+}
+.searchbar input:hover {
+  background-color: #211c1e;
+  color: white;
+  font-weight: bold;
+}
