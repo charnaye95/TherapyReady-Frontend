@@ -7,6 +7,7 @@ import About from './Pages/About';
 import Clinics from './Pages/Clinics';
 import Therapists from './Pages/Therapists';
 import Assessments from './Pages/Assessments';
+import DeleteClinic from "./Components/DeleteClinic";
 import Footer from './Components/Footer';
 // import { Navigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
@@ -38,6 +39,9 @@ function App() {
     getTherapists()
   }, [])
 
+  const [open, setOpen] = useState(false)
+
+
   if (!clinics && !therapists) return <h1>"No data rendered"</h1>
 
 
@@ -50,6 +54,9 @@ function App() {
         <Route path="/clinics" element={<Clinics clinics={clinics} />} />
         <Route path="/therapists" element={<Therapists therapists={therapists} />} />
         <Route path="/assessments" element={<Assessments />} />
+        <Route path="/addclinic" />
+        <Route path="/updateclinic" />
+        <Route path="/deleteclinic" element={<DeleteClinic open={open} setOpen={setOpen} />}   />
       </Routes>
       <Footer />
     </div>

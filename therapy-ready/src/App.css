@@ -1,30 +1,29 @@
 body {
   font-family: "Oranienbaum", serif;
+  color:#211c1e;
   /* font-family: 'Libre Caslon Display', serif; */
   /* background-color: #ece2d0; */
 }
 
 .navbar {
   display: flex;
-  /* background-color: #ef8557; */
-  background-color: #7088c5;
-  justify-content: space-between;
-  padding: 4vw;
-  font-weight: bold;
-  color: #211c1e;
-  /* margin-bottom: 2vw; */
-  font-size: 2vw;
-}
-.footer {
-  /* background-color: #ef8557; */
   background-color: #7088c5;
   justify-content: space-between;
   padding: 3vw;
   font-weight: bold;
   color: #211c1e;
-  margin-bottom: 2vw;
+  font-size: 2vw;
+}
+.footer {
+  background-color: #7088c5;
+  padding: 3vh;
+  font-weight: bold;
+  color: #211c1e;
   font-size: 2vw;
   text-align: center;
+  position: absolute;
+  width: 100%;
+
 }
 .footer-text {
   font-size: small;
@@ -32,7 +31,8 @@ body {
 }
 .title {
   text-align: center;
-  color: #007a45;
+  color: #C84630;
+  /* color: #57886C; */
   font-size: xx-large;
   font-weight: bold;
   margin-bottom: 2vh;
@@ -84,11 +84,12 @@ h1 {
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
-.search-button {
+button {
   background-color: #ece2d0;
   border-radius: 25%;
   padding: 5px;
   margin-left: 5px;
+  width:fit-content;
 }
 .assessment-button {
   text-align: center;
@@ -98,7 +99,6 @@ h1 {
   border-color: #211c1e;
   background-size: cover;
   background-position: center;
-  width: 100%;
   background-image: url("./Assets/umit-bulut-qbTC7ZwJB64-unsplash.jpg");
   padding-top: 20vh;
   padding-bottom: 20vh;
@@ -109,7 +109,7 @@ h1 {
   align-items: center;
 }
 .test-link {
-  color: #b89451;
+  color: #8D775F;
   text-decoration: underline;
   font-size: large;
   font-weight: 600;
@@ -143,7 +143,7 @@ h1 {
   flex-direction: column;
   border-style: solid;
   text-align: center;
-  border: black;
+  border: #211c1e;
 }
 .therapist-picture {
   width: 15%;
@@ -167,6 +167,11 @@ h1 {
 }
 .searchbar input:hover {
   background-color: #211c1e;
-  color: white;
+  color: #ece2d0;
   font-weight: bold;
+}
+.create {
+display: flex;
+justify-content: center;
+padding: 2vh;
 }

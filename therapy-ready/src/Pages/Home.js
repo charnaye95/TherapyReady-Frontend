@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Searchbar from "../Components/Searchbar";
 
@@ -45,9 +45,9 @@ function Home({ clinics, therapists }) {
 
       <Link to="/assessments">
         <div className="assessment-button">
-          <button Navigate>
+          <p Navigate>
             <p>Take one of our many assessments!</p>
-          </button>
+          </p>
         </div>
       </Link>
     </div>
