@@ -8,7 +8,7 @@ function Header() {
       <nav className="navbar">
 
         <div className="pages">
-        <Link to="/">
+        <Link to="/" onClick={() => window.location.assign("/")}>
             
             <h1 className="logo">
               <img

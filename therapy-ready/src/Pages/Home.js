@@ -2,19 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Searchbar from "../Components/Searchbar";
 
-function Home({ clinics, therapists }) {
+function Home({ clinics, therapists, dataResults, handleResults }) {
 
   return (
     <div>
       <div className="search-block">
-        <Searchbar clinics={clinics} therapists ={therapists}/>
+        <Searchbar clinics={clinics} therapists ={therapists} dataResults={dataResults} handleResults={handleResults}/>
       </div>
 
       <div className="featured">
         <h2>Featured Clinics</h2>
         <br></br>
         <div className="featured-clinics">
-          {clinics.slice(2).map((clinic) => (
+          {clinics?.slice(0,3).map((clinic) => (
             <div>
               <img
                 src={clinic.image}
@@ -30,7 +30,7 @@ function Home({ clinics, therapists }) {
         <h2>Featured Therapists</h2>
         <br></br>
         <div className="featured-therapists">
-          {therapists.slice(2).map((therapist) => (
+          {therapists?.slice(2,5).map((therapist) => (
             <div>
               <img
                 src={therapist.image}

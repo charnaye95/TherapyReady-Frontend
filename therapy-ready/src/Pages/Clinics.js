@@ -1,62 +1,75 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import DeleteClinic from '../Components/DeleteClinic'
 
+function Clinics({ clinics, dataResults }) {
 
-function Clinics({ clinics, dataResults, open, setOpen }) {
-
-  
   // I want for when i click on the button on the homepage for it to go to this page and show the search results of the clinics. and if nothing was searched, then display all of them(written under the return statement)
-  if (dataResults) {
-    <div className="search-results">
-      {dataResults.map((value, key) => {
-        return <div>{value.name}</div>;
+  if (dataResults.length > 0) {
+    <div className="clinics-list">
+      {dataResults.map((clinic, index) => {
+        console.log(clinic.name);
+        return (
+          <div key={index}>
+            <p>{clinic.name}</p>
+          </div>
+        );
       })}
     </div>;
-  } else
+  } else {
     return (
       <div>
         <div className="create">
           <button className="form-button">Add Clinic to Database</button>
         </div>
         <div>
-          {clinics.map((clinic) => (
-            <div className="clinics-list" key={clinic.id}>
-              <img
-                src={clinic.image}
-                className="clinic-image"
-                alt="clinic"
-              ></img>
-              <p>
-                <b>{clinic.name}</b>
-              </p>
-              <p>{clinic.street_number_and_name}</p>
-              <p>
-                {clinic.city}, {clinic.state}
-              </p>
-              <p>Phone: {clinic.phone_number}</p>
-              <p>
-                Support Groups?{" "}
-                {clinic.support_groups === true ? (
-                  <input type={"checkbox"} checked></input>
-                ) : (
-                  <input type={"checkbox"}></input>
-                )}
-              </p>
-              <br></br>
-              <div>
-              <button className="update form-button">Update Information</button>
-              {/* <Link to="/deleteclinic"> */}
-              <button className="delete form-button" onClick={() => setOpen(true)}>Delete Clinic from Database</button>
-              {/* </Link> */}
-            </div>
-            </div>
-          ))}
+          <p>
+            {clinics.map((clinic) => (
+              <div className="clinics-list" key={clinic.id}>
+                <img
+                  src={clinic.image}
+                  className="clinic-image"
+                  alt="therapist"
+                ></img>
+                <div className="info">
+                  <p>
+                    <b>{clinic.name}</b>
+                  </p>
+                  {console.log(clinic.name)}
+                  <p>{clinic.street_number_and_name}</p>
+                  <p>
+                    {" "}
+                    {clinic.city}, {clinic.state}
+                  </p>
+                  <p>
+                    <b>Specialty:</b> {clinic.phone_number}
+                  </p>
+                  <p>
+                    Support Groups?{" "}
+                    {clinic.support_groups === true ? (
+                      <input type={"checkbox"} checked></input>
+                    ) : (
+                      <input type={"checkbox"}></input>
+                    )}
+                  </p>
+                  <br></br>
+                  <div>
+                    <button className="update form-button">
+                      Update Information
+                    </button>
+                    <Link to="/deleteclinic">
+                      <button className="delete form-button">
+                        Delete Clinic from Database
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </p>
         </div>
-        <DeleteClinic open={open} setOpen={setOpen} /> 
-
       </div>
     );
+  }
 }
 
 export default Clinics;

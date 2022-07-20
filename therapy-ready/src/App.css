@@ -139,11 +139,13 @@ button {
   width: 2in;
 }
 .clinics-list {
+  justify-content: space-around;
   display: flex;
-  flex-direction: column;
-  border-style: solid;
-  text-align: center;
+  align-items: center;
   border: #211c1e;
+  border-style:solid;
+  margin: 5px;
+  padding: 10px;
 }
 .therapist-picture {
   width: 15%;
@@ -151,9 +153,11 @@ button {
 }
 .info {
   text-align: center;
+  vertical-align: middle;
+
 }
 .therapists-list {
-  text-align: justify;
+  text-align: center;
   display: flex;
   border: #211c1e;
   border-style:solid;
