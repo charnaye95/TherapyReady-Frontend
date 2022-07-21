@@ -40,6 +40,12 @@
 //     clinicResults={clinicResults} 
 //     />}
 // />
+// <Searchbar clinics={clinics} therapists ={therapists} dataResults={dataResults} handleResults={handleResults}  
+// clinicResults={clinicResults}
+// handleClinicResults={handleClinicResults}
+// therapistResults={therapistResults}
+// handleTherapistResults={handleTherapistResults}
+// />
 
 {/* {" "}
       {/* dataResults show

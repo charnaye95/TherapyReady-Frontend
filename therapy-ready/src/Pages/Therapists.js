@@ -11,7 +11,7 @@ function Therapists({ therapists }) {
                 <img
                   src={therapist.image}
                   className="therapist-picture"
-                  alt="therapist"
+                  alt="therapist profile"
                 ></img>
                 <div className="info">
                   <p>
@@ -30,9 +30,9 @@ function Therapists({ therapists }) {
                   <p>
                     <b>Insurances Accepted:</b> {therapist.insurance_taken}
                   </p>
-                  <p>{therapist.price_range}</p>
+                  <p><b>Pricing: </b>{therapist.price_range}</p>
                   <p>
-                    Offers sliding scale for pricing?{" "}
+                    <b>Offers sliding scale for pricing?</b>{" "}
                     {therapist.sliding_scale === true ? (
                       <input type={"checkbox"} checked></input>
                     ) : (
@@ -40,8 +40,16 @@ function Therapists({ therapists }) {
                     )}
                   </p>
                   <p>
+                    <b>Virtual appointments?</b>{" "}
+                    {therapist.virtual === true ? (
+                      <input type={"checkbox"} checked></input>
+                    ) : (
+                      <input type={"checkbox"}></input>
+                    )}
+                  </p>
+                  <p>
                     If interested, contact me at{" "}
-                    <a href={"mailto: {therapist.email}"}>{therapist.email}</a>
+                    <a href={`mailto: ${therapist.email}`}><b>{therapist.email}</b></a>
                   </p>
                 </div>
               </div>

@@ -153,12 +153,10 @@ button {
 }
 .info {
   text-align: center;
-  vertical-align: middle;
-
 }
 .therapists-list {
-  text-align: center;
   display: flex;
+  /* justify-content:space-around; */
   border: #211c1e;
   border-style:solid;
   margin: 5px;

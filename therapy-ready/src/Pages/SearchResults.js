@@ -2,6 +2,8 @@ import React from "react";
 
 function SearchResults({dataResults}) {
   console.log(dataResults);
+  if (dataResults.length === 0) return <h1 className="text-center">"No matching results detected"</h1>;
+
   return (
       <div>
         <p>

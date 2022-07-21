@@ -17,7 +17,7 @@ function Clinics({clinics}) {
                   <img
                     src={clinic.image}
                     className="clinic-image"
-                    alt="therapist"
+                    alt="inside of clinic"
                   ></img>
                   <div className="info">
                     <p>
@@ -30,7 +30,7 @@ function Clinics({clinics}) {
                       {clinic.city}, {clinic.state}
                     </p>
                     <p>
-                      <b>Specialty:</b> {clinic.phone_number}
+                      <b>Phone:</b> {clinic.phone_number}
                     </p>
                     <p>
                       Support Groups?{" "}
