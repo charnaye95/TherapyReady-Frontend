@@ -2,7 +2,7 @@
 import "./App.css";
 import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Header from "./Components/Header";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
@@ -10,6 +10,7 @@ import Clinics from "./Pages/Clinics";
 import ClinicDetail from "./Pages/ClinicDetail";
 import DeleteClinicForm from "./Components/DeleteClinicForm";
 import Therapists from "./Pages/Therapists";
+import TherapistDetail from "./Pages/TherapistDetail"
 import SearchResults from "./Pages/SearchResults";
 import Assessments from "./Pages/Assessments";
 import Footer from "./Components/Footer";
@@ -20,7 +21,7 @@ function App() {
   const [therapists, setTherapists] = useState(null);
   const clinicurl = "https://therapyready-backend.herokuapp.com/clinics/";
   const therapisturl = "https://therapyready-backend.herokuapp.com/therapists/";
-  const { id } = useParams();
+  // const { id } = useParams();
   const navigate = useNavigate();
 
   function getClinics() {
@@ -76,8 +77,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/clinics" element={<Clinics clinics={clinics} />} />
         <Route path="/results" element={<SearchResults dataResults={dataResults} />} />
-        <Route path="/clinics/:id" element={<ClinicDetail id={id} clinics={clinics} />} />
+        <Route path="/clinics/:id" element={<ClinicDetail clinics={clinics} />} />
         <Route path="/therapists" element={ <Therapists therapists={therapists} /> } />
+        <Route path="/therapists/:id" element={<TherapistDetail therapists={therapists} />} />
         <Route path="/assessments" element={<Assessments />} />
         <Route path="/addclinic" />
         <Route path="/updateclinic" />

@@ -1,6 +1,9 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 
 function Therapists({ therapists }) {
+
+  if (!therapists) return <h1>"No data rendered"</h1>;
 
   return (
     <>
@@ -10,7 +13,7 @@ function Therapists({ therapists }) {
               <div className="therapists-list" key={index}>
                 <img
                   src={therapist.image}
-                  className="therapist-picture"
+                  className="w-64 h-3/4"
                   alt="therapist profile"
                 ></img>
                 <div className="info">
@@ -51,6 +54,15 @@ function Therapists({ therapists }) {
                     If interested, contact me at{" "}
                     <a href={`mailto: ${therapist.email}`}><b>{therapist.email}</b></a>
                   </p>
+                  <br></br>
+                  <div>
+                    <Link to={`/therapists/${index}`}>
+                      <button className="form-button">
+                        More Details...
+                      </button>
+                    </Link>
+                  </div>
+                  <br></br>
                 </div>
               </div>
             ))}

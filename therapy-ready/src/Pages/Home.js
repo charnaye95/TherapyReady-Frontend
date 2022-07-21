@@ -35,7 +35,7 @@ function Home({ clinics, therapists, dataResults, handleResults}) {
               <img
                 src={therapist.image}
                 alt="therapist"
-                className="therapist-image"
+                className="therapist-homepage"
               ></img>
               <p>{therapist.name}</p>
             </div>
