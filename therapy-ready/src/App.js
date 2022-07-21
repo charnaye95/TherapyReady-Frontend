@@ -7,13 +7,13 @@ import Header from "./Components/Header";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Clinics from "./Pages/Clinics";
-import Therapists from "./Pages/Therapists";
-import Assessments from "./Pages/Assessments";
+import ClinicDetail from "./Pages/ClinicDetail";
 import DeleteClinicForm from "./Components/DeleteClinicForm";
+import Therapists from "./Pages/Therapists";
+import SearchResults from "./Pages/SearchResults";
+import Assessments from "./Pages/Assessments";
 import Footer from "./Components/Footer";
 import axios from "axios";
-import ClinicDetail from "./Pages/ClinicDetail";
-import SearchResults from "./Pages/SearchResults";
 
 function App() {
   const [clinics, setClinics] = useState(null);
@@ -64,28 +64,7 @@ function App() {
     setDataResults(newData);
     console.log(searchString);
   };
-  //clinic search
-  // const [clinicResults, setClinicResults] = useState([]);
 
-  // const handleClinicResults = (event) => {
-  //   const searchString = event.target.value;
-  //   const newData = clinics.filter((value) => {
-  //     return value.city.toLowerCase().includes(searchString.toLowerCase());
-  //   });
-  //   setClinicResults(newData);
-  //   console.log(searchString);
-  // };
-  //therapist search
-  // const [therapistResults, setTherapistResults] = useState([]);
-
-  // const handleTherapistResults = (event) => {
-  //   const searchString = event.target.value;
-  //   const newData = therapists.filter((value) => {
-  //     return value.city.toLowerCase().includes(searchString.toLowerCase());
-  //   });
-  //   setTherapistResults(newData);
-  //   console.log(searchString);
-  // };
 
   if (!clinics && !therapists) return <h1>"No data rendered"</h1>;
 
@@ -93,50 +72,16 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route
-          path="/"
-          element={
-            <Home
-              clinics={clinics}
-              therapists={therapists}
-              dataResults={dataResults}
-              handleResults={handleResults}
-              // clinicResults={clinicResults}
-              // handleClinicResults={handleClinicResults}
-              // therapistResults={therapistResults}
-              // handleTherapistResults={handleTherapistResults}
-            />
-          }
-        />
+        <Route path="/" element={ <Home clinics={clinics} therapists={therapists} dataResults= {dataResults} handleResults={handleResults} /> } />
         <Route path="/about" element={<About />} />
-        <Route
-          path="/clinics"
-          element={<Clinics clinics={clinics} dataResults={dataResults} 
-          // clinicResults={clinicResults} 
-          />}
-        />
-        <Route
-          path="/results"
-          element={<SearchResults dataResults={dataResults} 
-          // clinicResults={clinicResults} 
-          />}
-        />
+        <Route path="/clinics" element={<Clinics clinics={clinics} />} />
+        <Route path="/results" element={<SearchResults dataResults={dataResults} />} />
         <Route path="/clinics/:id" element={<ClinicDetail id={id} clinics={clinics} />} />
-        <Route
-          path="/therapists"
-          element={
-            <Therapists therapists={therapists} dataResults={dataResults} 
-            // therapistResults={therapistResults} 
-            />
-          }
-        />
+        <Route path="/therapists" element={ <Therapists therapists={therapists} /> } />
         <Route path="/assessments" element={<Assessments />} />
         <Route path="/addclinic" />
         <Route path="/updateclinic" />
-        <Route
-          path="/deleteclinic"
-          element={<DeleteClinicForm deleteClinic={deleteClinic} />}
-        />
+        <Route path="/deleteclinic" element={<DeleteClinicForm deleteClinic={deleteClinic} />} />
       </Routes>
       <Footer />
     </div>
