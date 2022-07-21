@@ -2,12 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Searchbar from "../Components/Searchbar";
 
-function Home({ clinics, therapists, dataResults, handleResults }) {
+function Home({ clinics, therapists, dataResults, handleResults, clinicResults, handleClinicResults, therapistResults, handleTherapistResults }) {
 
   return (
     <div>
       <div className="search-block">
-        <Searchbar clinics={clinics} therapists ={therapists} dataResults={dataResults} handleResults={handleResults}/>
+        <Searchbar clinics={clinics} therapists ={therapists} dataResults={dataResults} handleResults={handleResults}  
+              // clinicResults={clinicResults}
+              // handleClinicResults={handleClinicResults}
+              // therapistResults={therapistResults}
+              // handleTherapistResults={handleTherapistResults}
+              />
       </div>
 
       <div className="featured">
