@@ -1,0 +1,206 @@
+body {
+  font-family: "Oranienbaum", serif;
+  color: #211c1e;
+  /* font-family: 'Libre Caslon Display', serif; */
+  /* background-color: #ece2d0; */
+}
+
+.navbar {
+  display: flex;
+  background-color: #7088c5;
+  justify-content: space-between;
+  padding: 3vw;
+  font-weight: bold;
+  color: #211c1e;
+  font-size: 2vw;
+}
+.footer {
+  background-color: #7088c5;
+  padding: 3vh;
+  font-weight: bold;
+  color: #211c1e;
+  font-size: 2vw;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+}
+.footer-text {
+  font-size: small;
+  font-weight: bold;
+}
+.title {
+  text-align: center;
+  color: #c84630;
+  font-size: xx-large;
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
+.pages {
+  display: flex;
+  gap: 15px;
+  font-size: 2vw;
+  align-items: center;
+}
+.signup-login-nav {
+  display: flex;
+  gap: 15px;
+  font-size: 2vw;
+  align-items: center;
+}
+.test-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.test-container div {
+  width: 33%;
+  margin-bottom: 3vh;
+  text-align: center;
+}
+.category {
+  font-weight: bold;
+  font-size: larger;
+}
+.searchbar {
+  text-align: center;
+  border: #211c1e;
+  border-style: solid;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+h1 {
+  font-weight: bolder;
+  font-size: x-large;
+}
+.featured {
+  text-align: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+button {
+  background-color: #ece2d0;
+  border-radius: 25%;
+  padding: 5px;
+  margin-left: 5px;
+  width: fit-content;
+}
+.assessment-button {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 600;
+  border-style: solid;
+  border-color: #211c1e;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./Assets/umit-bulut-qbTC7ZwJB64-unsplash.jpg");
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+.logo {
+  display: flex;
+  max-block-size: 8vw;
+  align-items: center;
+}
+.test-link {
+  color: #8d775f;
+  text-decoration: underline;
+  font-size: large;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.search-block {
+  background-image: url("./Assets/priscilla-du-preez-aPa843frIzI-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+.featured-clinics {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+.featured-therapists {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+.clinic-image {
+  height: 2in;
+  width: 3in;
+}
+.therapist-homepage {
+  height: 3in;
+  width: 2in;
+}
+.clinics-list {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  border: #211c1e;
+  border-style: solid;
+  margin: 5px;
+  padding: 10px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.therapists-list {
+  display: flex;
+  justify-content: space-around;
+  border: #211c1e;
+  border-style: solid;
+  margin: 5px;
+}
+.searchbar input {
+  background-color: white;
+  font-size: medium;
+  width: 30vw;
+  height: 6vh;
+}
+.searchbar input:hover {
+  background-color: #211c1e;
+  color: #ece2d0;
+  font-weight: bold;
+}
+.create {
+  display: flex;
+  justify-content: center;
+  padding: 2vh;
+}
+.create-form {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create-form label {
+color: #211c1e;
+font-weight: bold;
+font-size: large;
+}
+.create-form textarea, .create-form input, .create-form select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+}
+.create-form ::placeholder {
+  text-align: center;
+  font-weight: bold;
+  color: #8d775f;
+}
+.create-form button {
+  cursor: pointer; 
+  /* explore the cursors */
+  width: 100px;
+  height: 50px;
+}
