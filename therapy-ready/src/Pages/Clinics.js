@@ -1,10 +1,9 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Clinics({ clinics }) {
-  const { id } = useParams()
 
-  console.log(id)
+
   // I want for when i click on the button on the homepage for it to go to this page and show the search results of the clinics. and if nothing was searched, then display all of them(written under the return statement)
   return (
     <>
@@ -15,18 +14,16 @@ function Clinics({ clinics }) {
           </Link>
         </div>
         <div>
-          <p>
-            {clinics.map((clinic) => (
-              <div className="clinics-list">
+          <div>
+            {clinics.map((clinic, index) => (
+              <div className="clinics-list" key={index}>
                 <img
                   src={clinic.image}
                   className="clinic-image"
                   alt="inside of clinic"
                 ></img>
                 <div className="info">
-                  <p>
-                    <b>{clinic.name}</b>
-                  </p>
+                  <p> <b>{clinic.name}</b> </p>
                   {console.log(clinic.name)}
                   <p>{clinic.street_number_and_name}</p>
                   <p>
@@ -34,18 +31,18 @@ function Clinics({ clinics }) {
                     {clinic.city}, {clinic.state}
                   </p>
                   <p>
-                  <a href={`tel: ${clinic.phone_number}`}><b>Phone:</b> {clinic.phone_number}</a>                  </p>
+                    <a href={`tel: ${clinic.phone_number}`}><b>Phone:</b> {clinic.phone_number}</a>                  </p>
                   <p>
                     Support Groups?{" "}
                     {clinic.support_groups === true ? (
-                      <input type={"checkbox"} checked></input>
+                      <input type={"checkbox"} defaultChecked></input>
                     ) : (
                       <input type={"checkbox"}></input>
                     )}
                   </p>
                   <br></br>
                   <div>
-                    <Link to={`/clinics/${id}`}>
+                    <Link to={`/clinics/${clinic.id}`}>
                       <button className="form-button">
                         More Details...
                       </button>
@@ -54,7 +51,7 @@ function Clinics({ clinics }) {
                 </div>
               </div>
             ))}
-          </p>
+          </div>
         </div>
       </div>
     </>

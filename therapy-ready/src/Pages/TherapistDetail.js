@@ -43,7 +43,7 @@ function TherapistDetail({ therapists }) {
                 <p>
                     <b>Offers sliding scale for pricing?</b>{" "}
                     {therapist.sliding_scale === true ? (
-                        <input type={"checkbox"} checked></input>
+                        <input type={"checkbox"} defaultChecked></input>
                     ) : (
                         <input type={"checkbox"}></input>
                     )}
@@ -51,7 +51,7 @@ function TherapistDetail({ therapists }) {
                 <p>
                     <b>Virtual appointments?</b>{" "}
                     {therapist.virtual === true ? (
-                        <input type={"checkbox"} checked></input>
+                        <input type={"checkbox"} defaultChecked></input>
                     ) : (
                         <input type={"checkbox"}></input>
                     )}

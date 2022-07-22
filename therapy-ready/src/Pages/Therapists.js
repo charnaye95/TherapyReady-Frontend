@@ -13,7 +13,7 @@ function Therapists({ therapists }) {
           </Link>
         </div>
     <div>
-          <p>
+          <div>
             {therapists.map((therapist, index) => (
               <div className="therapists-list" key={index}>
                 <img
@@ -42,7 +42,7 @@ function Therapists({ therapists }) {
                   <p>
                     <b>Offers sliding scale for pricing?</b>{" "}
                     {therapist.sliding_scale === true ? (
-                      <input type={"checkbox"} checked></input>
+                      <input type={"checkbox"} defaultChecked></input>
                     ) : (
                       <input type={"checkbox"}></input>
                     )}
@@ -50,7 +50,7 @@ function Therapists({ therapists }) {
                   <p>
                     <b>Virtual appointments offered?</b>{" "}
                     {therapist.virtual === true ? (
-                      <input type={"checkbox"} checked></input>
+                      <input type={"checkbox"} defaultChecked></input>
                     ) : (
                       <input type={"checkbox"}></input>
                     )}
@@ -71,7 +71,7 @@ function Therapists({ therapists }) {
                 </div>
               </div>
             ))}
-          </p>
+          </div>
         </div>
       
     </>

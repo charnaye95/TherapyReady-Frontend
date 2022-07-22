@@ -31,7 +31,7 @@ const alternateFunction = async () => {
 }
 
 useEffect(() => {
-  getSingleClinic()
+getSingleClinic()
 }, [])
 
   return (
