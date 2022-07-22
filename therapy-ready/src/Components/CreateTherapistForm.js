@@ -9,7 +9,7 @@ const [image, setImage] = useState('');
 const [name, setName] = useState('');
 const [bio, setBio] = useState('');
 const [city, setCity] = useState('');
-const [license, setLicense] = useState('');
+const [license, setLicense] = useState('Licensed Professional Counselor (LPC)');
 const [specialties, setSpecialties] = useState('');
 const [insurances, setInsurances] = useState('');
 const [priceRange, setPriceRange] = useState(''); 
@@ -20,6 +20,7 @@ const [email, setEmail] = useState(''); //text input
 const createTherapist = () => {
     axios.post(therapistUrl, {
         //backend field: frontend field
+        clinic: 1,
         image: image,
         name: name,
         bio: bio,
@@ -39,7 +40,7 @@ const createTherapist = () => {
 function handleSubmit(event) {
     event.preventDefault();
     createTherapist()
-    // window.location.assign('/therapists')    
+    window.location.assign('/therapists')    
 }
 
   return (

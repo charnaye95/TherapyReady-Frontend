@@ -87,7 +87,7 @@ function App() {
         <Route path="/clinics/create" element={<CreateClinicForm clinicUrl={clinicUrl} />} />
         <Route path="/clinics/update" element={<UpdateClinicForm />} />
         <Route path="/clinics/delete" element={<DeleteClinicForm />} />
-        <Route path="/therapists/create" element={<CreateTherapistForm therapistUrl={therapistUrl} />} />
+        <Route path="/therapists/create" element={<CreateTherapistForm therapistUrl={therapistUrl} clinics={clinics} />} />
         <Route path="/therapists/update" element={<UpdateTherapistForm />} />
         <Route path="/therapists/delete" element={<DeleteTherapistForm />} />
       </Routes>
