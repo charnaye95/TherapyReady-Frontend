@@ -1,6 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 function ClinicDetail({ clinics }) {
   const { id } = useParams()
@@ -45,9 +44,12 @@ function ClinicDetail({ clinics }) {
           </p>
           <br></br>
           <div>
+          <Link to={`/clinics/${id}/update`}>
             <button className="update form-button">
               Update Information
             </button>
+            </Link>
+
             <Link to="/deleteclinic">
               <button className="delete form-button">
                 Delete Clinic from Database

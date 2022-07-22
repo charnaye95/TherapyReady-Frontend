@@ -1,7 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function Clinics({ clinics }) {
+  const { id } = useParams()
+
+  console.log(id)
   // I want for when i click on the button on the homepage for it to go to this page and show the search results of the clinics. and if nothing was searched, then display all of them(written under the return statement)
   return (
     <>
@@ -13,8 +16,8 @@ function Clinics({ clinics }) {
         </div>
         <div>
           <p>
-            {clinics.map((clinic, index) => (
-              <div className="clinics-list" key={index}>
+            {clinics.map((clinic) => (
+              <div className="clinics-list">
                 <img
                   src={clinic.image}
                   className="clinic-image"
@@ -42,7 +45,7 @@ function Clinics({ clinics }) {
                   </p>
                   <br></br>
                   <div>
-                    <Link to={`/clinics/${index}`}>
+                    <Link to={`/clinics/${id}`}>
                       <button className="form-button">
                         More Details...
                       </button>

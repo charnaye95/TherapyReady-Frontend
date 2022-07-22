@@ -62,9 +62,11 @@ function TherapistDetail({ therapists }) {
                 </p>
                 <br></br>
                 <div>
-                    <button className="update form-button">
-                        Update Information
-                    </button>
+                    <Link to={`/therapists/${id}/update`}>
+                        <button className="update form-button">
+                            Update Information
+                        </button>
+                    </Link>
                     <Link to="/deleteclinic">
                         <button className="delete form-button">
                             Delete Therapist from Database
