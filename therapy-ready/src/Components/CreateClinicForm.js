@@ -1,18 +1,16 @@
 import React, { useState } from 'react'
-// import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 
 function CreateClinicForm({clinicUrl}) {
-    // let navigate = useNavigate();
 
     //states for form
     const [image, setImage] = useState('');
-    const [name, setName] = useState('')
+    const [name, setName] = useState('');
     const [streetNumAndName, setStreetNumAndName] = useState('');
     const [city, setCity] = useState('');
     const [stateInitial, setStateInitial] = useState('');
     const [phone, setPhone] = useState('');
-    const [supportGroups, setSupportGroups] = useState(false)
+    const [supportGroups, setSupportGroups] = useState(false);
 
     const createClinic = () => {
         axios.post(clinicUrl, {

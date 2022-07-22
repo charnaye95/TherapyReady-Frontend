@@ -7,6 +7,11 @@ function Therapists({ therapists }) {
 
   return (
     <>
+    <div className="create">
+          <Link to='/therapists/create'>
+            <button className="form-button">Add Therapist to Database</button>
+          </Link>
+        </div>
     <div>
           <p>
             {therapists.map((therapist, index) => (
@@ -43,7 +48,7 @@ function Therapists({ therapists }) {
                     )}
                   </p>
                   <p>
-                    <b>Virtual appointments?</b>{" "}
+                    <b>Virtual appointments offered?</b>{" "}
                     {therapist.virtual === true ? (
                       <input type={"checkbox"} checked></input>
                     ) : (

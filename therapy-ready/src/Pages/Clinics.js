@@ -7,7 +7,7 @@ function Clinics({ clinics }) {
     <>
       <div>
         <div className="create">
-          <Link to='/addclinic'>
+          <Link to='/clinics/create'>
             <button className="form-button">Add Clinic to Database</button>
           </Link>
         </div>
