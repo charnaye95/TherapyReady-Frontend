@@ -8,8 +8,6 @@ function ClinicDetail({ clinics }) {
 
   const [singleClinic, setSingleClinic] = useState(null);
 
-//   new function for gettinga  single clinic
-// useEffect
 const getSingleClinic = () => {
   axios.get(singleClinicUrl)
     .then((res) => setSingleClinic(res.data))

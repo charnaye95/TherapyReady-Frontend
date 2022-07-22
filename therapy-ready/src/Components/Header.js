@@ -34,14 +34,14 @@ function Header() {
           </Link>
         </div>
 
-        <div className="signup-login-nav">
+        {/* <div className="signup-login-nav">
           <Link to="/signup">
             <p>Sign Up</p>
           </Link>
           <Link to="/login">
             <p>Login</p>
           </Link>
-        </div>
+        </div> */}
       </nav>
     </div>
   );
