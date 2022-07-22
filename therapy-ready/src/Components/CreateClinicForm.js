@@ -16,24 +16,34 @@ function CreateClinicForm({clinicUrl}) {
 
     const createClinic = () => {
         axios.post(clinicUrl, {
-            
-        }
-        .then((res) => {
-            
+            //backend field: frontend field
+            image: image,
+            name: name,
+            street_number_and_name: streetNumAndName,
+            city: city,
+            state: stateInitial,
+            phone_number: phone,
+            support_groups: supportGroups
         })
-    }
+        .then((res => console.log('posting data', res)))
+        .catch(console.error);
+         }
 
-    const handleSubmit = (event) => {
+    function handleSubmit(event) {
         event.preventDefault();
+        createClinic()
+        window.location.assign('/clinics')    
     }
 
     return (
         <div className='create-form'>
 
             <h1 className='title'>Add Clinic to Database</h1>
-
+            <p className='disclaimer'> *Each field must be filled out*</p>
             <br></br>
-            <form onSubmit={}>
+            <form 
+            // onSubmit={handleSubmit}
+            >
                 <label>Image:</label>
                 <textarea 
                     value={image} 
@@ -102,8 +112,10 @@ function CreateClinicForm({clinicUrl}) {
                 </select>
                 {console.log(supportGroups)}
 
-
-                <button>Confirm</button>
+                <button 
+                    onClick={handleSubmit}>
+                        Confirm
+                </button>
             </form>
             <br></br>
         </div>
