@@ -120,10 +120,12 @@ button {
 .featured-clinics {
   display: flex;
   justify-content: space-around;
+  gap: 15px;
 }
 .featured-therapists {
   display: flex;
   justify-content: space-around;
+  gap: 15px;
 }
 .clinic-image {
   height: 2in;
@@ -171,4 +173,34 @@ button {
   display: flex;
   justify-content: center;
   padding: 2vh;
+}
+.create-form {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create-form label {
+color: #211c1e;
+font-weight: bold;
+font-size: large;
+}
+.create-form textarea, .create-form input, .create-form select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+}
+.create-form ::placeholder {
+  text-align: center;
+  font-weight: bold;
+  color: #8d775f;
+}
+.create-form button {
+  cursor: pointer; 
+  /* explore the cursors */
+  width: 100px;
+  height: 50px;
 }

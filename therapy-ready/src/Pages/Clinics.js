@@ -7,7 +7,9 @@ function Clinics({ clinics }) {
     <>
       <div>
         <div className="create">
-          <button className="form-button">Add Clinic to Database</button>
+          <Link to='/addclinic'>
+            <button className="form-button">Add Clinic to Database</button>
+          </Link>
         </div>
         <div>
           <p>
@@ -29,8 +31,7 @@ function Clinics({ clinics }) {
                     {clinic.city}, {clinic.state}
                   </p>
                   <p>
-                    <b>Phone:</b> {clinic.phone_number}
-                  </p>
+                  <a href={`tel: ${clinic.phone_number}`}><b>Phone:</b> {clinic.phone_number}</a>                  </p>
                   <p>
                     Support Groups?{" "}
                     {clinic.support_groups === true ? (

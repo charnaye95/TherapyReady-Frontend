@@ -8,6 +8,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Clinics from "./Pages/Clinics";
 import ClinicDetail from "./Pages/ClinicDetail";
+import CreateClinicForm from "./Components/CreateClinicForm";
 import DeleteClinicForm from "./Components/DeleteClinicForm";
 import Therapists from "./Pages/Therapists";
 import TherapistDetail from "./Pages/TherapistDetail"
@@ -19,21 +20,19 @@ import axios from "axios";
 function App() {
   const [clinics, setClinics] = useState(null);
   const [therapists, setTherapists] = useState(null);
-  const clinicurl = "https://therapyready-backend.herokuapp.com/clinics/";
-  const therapisturl = "https://therapyready-backend.herokuapp.com/therapists/";
+  const clinicUrl = "https://therapyready-backend.herokuapp.com/clinics/";
+  const therapistUrl = "https://therapyready-backend.herokuapp.com/therapists/";
   // const { id } = useParams();
   const navigate = useNavigate();
 
-  function getClinics() {
-    axios
-      .get(clinicurl)
+  const getClinics = () => {
+    axios.get(clinicUrl)
       .then((res) => setClinics(res.data))
       .catch(console.error);
   }
 
-  function getTherapists() {
-    axios
-      .get(therapisturl)
+  const getTherapists = () => {
+    axios.get(therapistUrl)
       .then((res) => setTherapists(res.data))
       .catch(console.error);
   }
@@ -81,7 +80,7 @@ function App() {
         <Route path="/therapists" element={ <Therapists therapists={therapists} /> } />
         <Route path="/therapists/:id" element={<TherapistDetail therapists={therapists} />} />
         <Route path="/assessments" element={<Assessments />} />
-        <Route path="/addclinic" />
+        <Route path="/addclinic" element={<CreateClinicForm clinicUrl={clinicUrl} />} />
         <Route path="/updateclinic" />
         <Route path="/deleteclinic" element={<DeleteClinicForm deleteClinic={deleteClinic} />} />
       </Routes>
