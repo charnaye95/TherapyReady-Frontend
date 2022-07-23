@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
 
-function UpdateClinicForm({ }) {
+function UpdateClinicForm() {
 
   const { id } = useParams()
   const singleClinicUrl = `https://therapyready-backend.herokuapp.com/clinics/${id}`
