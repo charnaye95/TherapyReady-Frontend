@@ -61,7 +61,7 @@ function ClinicDetail() {
               </button>
             </Link>
 
-            <Link to="/deleteclinic">
+            <Link to={`/clinics/${id}/delete`}>
               <button className="delete form-button">
                 Delete Clinic from Database
               </button>

@@ -78,7 +78,7 @@ function TherapistDetail() {
                             Update Information
                         </button>
                     </Link>
-                    <Link to="/deleteclinic">
+                    <Link to={`/therapists/${id}/delete`}>
                         <button className="delete form-button">
                             Delete Therapist from Database
                         </button>

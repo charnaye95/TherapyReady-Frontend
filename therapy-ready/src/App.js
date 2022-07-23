@@ -41,14 +41,6 @@ function App() {
       .catch(console.error);
   }
 
-  //in progress delete function
-  // const deleteClinic = async (id) => {
-  //   await axios.delete(
-  //     `https://therapyready-backend.herokuapp.com/clinics/${id}`
-  //   );
-  //   navigate("/clinics");
-  // };
-
   useEffect(() => {
     getClinics();
     getTherapists();
