@@ -15,7 +15,7 @@ function CreateTherapistForm({ therapistUrl }) {
     const [priceRange, setPriceRange] = useState('');
     const [slidingScale, setSlidingScale] = useState(false);
     const [virtual, setVirtual] = useState(false);
-    const [email, setEmail] = useState(''); //text input
+    const [email, setEmail] = useState('');
 
     const createTherapist = () => {
         axios.post(therapistUrl, {
