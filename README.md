@@ -1,6 +1,6 @@
-# TherapyReady - Backend App
+# TherapyReady - Frontend App
  
-[Link Deployed on Netlify](  )
+[Link Deployed on Netlify](https://therapyready.netlify.app/)
  
 ## Screenshots of the app
 ![Clinics](/Users/charnaye95/Downloads/Clinics - backend.png "Clinics-backend")
