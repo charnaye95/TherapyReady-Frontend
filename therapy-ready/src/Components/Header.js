@@ -8,18 +8,18 @@ function Header() {
       <nav className="navbar">
 
         <div className="pages">
-        <Link to="/" 
-        // onClick={() => window.location.assign("/")}
-        >
-            
+          <Link to="/"
+          // onClick={() => window.location.assign("/")}
+          >
+
             <h1 className="logo">
               <img
-              src={logo}
-              alt="Brain icons created by Darius Dan - Flaticon"
-              className="logo"
-            ></img>
+                src={logo}
+                alt="Brain icons created by Darius Dan - Flaticon"
+                className="logo"
+              ></img>
               TherapyReady</h1>
-        </Link>
+          </Link>
           <Link to="/about">
             <p>About</p>
           </Link>

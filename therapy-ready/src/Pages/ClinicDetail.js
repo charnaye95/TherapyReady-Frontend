@@ -1,21 +1,21 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
 
-function ClinicDetail({ clinics }) {
+function ClinicDetail() {
   const { id } = useParams()
   const singleClinicUrl = `https://therapyready-backend.herokuapp.com/clinics/${id}`
 
   const [singleClinic, setSingleClinic] = useState(null);
 
-const getSingleClinic = () => {
-  axios.get(singleClinicUrl)
-    .then((res) => setSingleClinic(res.data))
-    .catch(console.error);
-}
+  const getSingleClinic = () => {
+    axios.get(singleClinicUrl)
+      .then((res) => setSingleClinic(res.data))
+      .catch(console.error);
+  }
 
-useEffect(() => {
-  getSingleClinic()
+  useEffect(() => {
+    getSingleClinic()
   }, [])
 
   console.log(singleClinic)
@@ -54,20 +54,20 @@ useEffect(() => {
             )}
           </p>
           <br></br>
-        <div>
-          <Link to={`/clinics/${id}/update`}>
-            <button className="update form-button">
-              Update Information
-            </button>
-          </Link>
+          <div>
+            <Link to={`/clinics/${id}/update`}>
+              <button className="update form-button">
+                Update Information
+              </button>
+            </Link>
 
-          <Link to="/deleteclinic">
-            <button className="delete form-button">
+            <Link to={`/clinics/${id}/delete`}>
+              <button className="delete form-button">
                 Delete Clinic from Database
-            </button>
-          </Link>
-        </div>
-        <br></br>
+              </button>
+            </Link>
+          </div>
+          <br></br>
         </div>
       </div>
     </div>
