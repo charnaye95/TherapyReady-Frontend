@@ -180,11 +180,13 @@ button {
   text-align: center;
 }
 .create-form label {
-color: #211c1e;
-font-weight: bold;
-font-size: large;
+  color: #211c1e;
+  font-weight: bold;
+  font-size: large;
 }
-.create-form textarea, .create-form input, .create-form select {
+.create-form textarea,
+.create-form input,
+.create-form select {
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
@@ -199,7 +201,7 @@ font-size: large;
   color: #8d775f;
 }
 .create-form button {
-  cursor: pointer; 
+  cursor: pointer;
   /* explore the cursors */
   width: 100px;
   height: 50px;

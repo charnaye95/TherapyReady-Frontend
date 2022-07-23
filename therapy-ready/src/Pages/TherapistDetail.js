@@ -1,22 +1,33 @@
-import React from 'react'
-import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react'
+import { useParams, Link } from 'react-router-dom';
+import axios from 'axios';
 
-
-function TherapistDetail({ therapists }) {
+function TherapistDetail() {
     const { id } = useParams()
-    const therapist = therapists[id]
+    const singleTherapistUrl = `https://therapyready-backend.herokuapp.com/therapists/${id}`
 
-    console.log(therapist)
+    const [singleTherapist, setSingleTherapist] = useState(null);
 
-    if (!therapist) return <h1>"No data rendered"</h1>;
+    const getSingleTherapist = () => {
+        axios.get(singleTherapistUrl)
+            .then((res) => setSingleTherapist(res.data))
+            .catch(console.error);
+    }
+
+    useEffect(() => {
+        getSingleTherapist()
+    }, [])
+
+    console.log(singleTherapist)
+
+    if (!singleTherapist) return <h1>"No data rendered"</h1>;
 
     return (
-        <div key={id}>
+        <div key={singleTherapist.id}>
             <br></br>
             <div className='flex justify-center'>
                 <img
-                    src={therapist.image}
+                    src={singleTherapist.image}
                     className="w-25 h-1/2"
                     alt="therapist profile"
                 ></img>
@@ -24,25 +35,25 @@ function TherapistDetail({ therapists }) {
             <br></br>
             <div className="info text-lg">
                 <p>
-                    <b>{therapist.name}</b>
+                    <b>{singleTherapist.name}</b>
                 </p>
                 <p>
-                    <b>Bio:</b> {therapist.bio}
+                    <b>Bio:</b> {singleTherapist.bio}
                 </p>
                 <p>
                     {" "}
-                    <b>License:</b> {therapist.license}
+                    <b>License:</b> {singleTherapist.license}
                 </p>
                 <p>
-                    <b>Specialty:</b> {therapist.specialty}
+                    <b>Specialty:</b> {singleTherapist.specialty}
                 </p>
                 <p>
-                    <b>Insurances Accepted:</b> {therapist.insurance_taken}
+                    <b>Insurances Accepted:</b> {singleTherapist.insurance_taken}
                 </p>
-                <p><b>Pricing: </b>{therapist.price_range}</p>
+                <p><b>Pricing: </b>{singleTherapist.price_range}</p>
                 <p>
                     <b>Offers sliding scale for pricing?</b>{" "}
-                    {therapist.sliding_scale === true ? (
+                    {singleTherapist.sliding_scale === true ? (
                         <input type={"checkbox"} defaultChecked></input>
                     ) : (
                         <input type={"checkbox"}></input>
@@ -50,7 +61,7 @@ function TherapistDetail({ therapists }) {
                 </p>
                 <p>
                     <b>Virtual appointments?</b>{" "}
-                    {therapist.virtual === true ? (
+                    {singleTherapist.virtual === true ? (
                         <input type={"checkbox"} defaultChecked></input>
                     ) : (
                         <input type={"checkbox"}></input>
@@ -58,7 +69,7 @@ function TherapistDetail({ therapists }) {
                 </p>
                 <p>
                     If interested, contact me at{" "}
-                    <a href={`mailto: ${therapist.email}`}><b>{therapist.email}</b></a>
+                    <a href={`mailto: ${singleTherapist.email}`}><b>{singleTherapist.email}</b></a>
                 </p>
                 <br></br>
                 <div>

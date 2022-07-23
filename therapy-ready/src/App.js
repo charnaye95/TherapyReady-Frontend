@@ -76,16 +76,16 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={ <Home clinics={clinics} therapists={therapists} dataResults= {dataResults} handleResults={handleResults} /> } />
+        <Route path="/" element={<Home clinics={clinics} therapists={therapists} dataResults={dataResults} handleResults={handleResults} />} />
         <Route path="/about" element={<About />} />
         <Route path="/clinics" element={<Clinics clinics={clinics} />} />
-        <Route path="/clinics/:id" element={<ClinicDetail clinics={clinics} />} />
-        <Route path="/therapists" element={ <Therapists therapists={therapists} /> } />
-        <Route path="/therapists/:id" element={<TherapistDetail therapists={therapists} />} />
+        <Route path="/clinics/:id" element={<ClinicDetail />} />
+        <Route path="/therapists" element={<Therapists therapists={therapists} />} />
+        <Route path="/therapists/:id" element={<TherapistDetail />} />
         <Route path="/assessments" element={<Assessments />} />
         <Route path="/results" element={<SearchResults dataResults={dataResults} />} />
         <Route path="/clinics/create" element={<CreateClinicForm clinicUrl={clinicUrl} />} />
-        <Route path="/clinics/:id/update" element={<UpdateClinicForm getClinics={getClinics} />} />
+        <Route path="/clinics/:id/update" element={<UpdateClinicForm />} />
         <Route path="/clinics/:id/delete" element={<DeleteClinicForm />} />
         <Route path="/therapists/create" element={<CreateTherapistForm therapistUrl={therapistUrl} clinics={clinics} />} />
         <Route path="/therapists/:id/update" element={<UpdateTherapistForm />} />

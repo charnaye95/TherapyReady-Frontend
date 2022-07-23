@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios';
 
-function CreateClinicForm({clinicUrl}) {
+function CreateClinicForm({ clinicUrl }) {
 
     //states for form
     const [image, setImage] = useState('');
@@ -23,14 +23,15 @@ function CreateClinicForm({clinicUrl}) {
             phone_number: phone,
             support_groups: supportGroups
         })
-        .then((res => console.log('posting data', res)))
-        .catch(console.error);
-         }
+            .then((res => console.log('posting data', res)))
+            .catch(console.error);
+    }
 
     function handleSubmit(event) {
         event.preventDefault();
         createClinic()
-        window.location.assign('/clinics')    
+        alert('It has been added to our database')
+        window.location.assign('/clinics')
     }
 
     return (
@@ -39,80 +40,80 @@ function CreateClinicForm({clinicUrl}) {
             <h1 className='title'>Add Clinic to Database</h1>
             <p className='disclaimer'> *Each field must be filled out*</p>
             <br></br>
-            <form 
+            <form
             // onSubmit={handleSubmit}
             >
                 <label>Image:</label>
-                <textarea 
-                    value={image} 
+                <textarea
+                    value={image}
                     onChange={(event) => setImage(event.target.value)}>
                 </textarea>
                 {console.log(image)}
 
                 <label>Name:</label>
-                <input 
-                    type='text' 
-                    required 
-                    value={name} 
-                    onChange={(event) => setName(event.target.value)}>    
+                <input
+                    type='text'
+                    required
+                    value={name}
+                    onChange={(event) => setName(event.target.value)}>
                 </input>
                 {console.log(name)}
 
 
                 <label>Street number and name:</label>
-                <input 
-                    type='text' 
-                    required 
-                    value={streetNumAndName} 
+                <input
+                    type='text'
+                    required
+                    value={streetNumAndName}
                     onChange={(event) => setStreetNumAndName(event.target.value)}>
                 </input>
                 {console.log(streetNumAndName)}
 
                 <label>City:</label>
-                <input 
-                    type='text' 
+                <input
+                    type='text'
                     required
-                    value={city} 
+                    value={city}
                     onChange={(event) => setCity(event.target.value)}>
                 </input>
                 {console.log(city)}
 
 
                 <label>State:</label>
-                <input 
+                <input
                     type='text'
                     required
                     maxLength='2'
                     placeholder='Must be 2 characters'
-                    value={stateInitial} 
+                    value={stateInitial}
                     onChange={(event) => setStateInitial(event.target.value)}>
                 </input>
                 {console.log(stateInitial)}
 
                 <label>Phone number:</label>
-                <input 
-                    type='text' 
+                <input
+                    type='text'
                     required
                     maxLength='10'
-                    placeholder='Must be 10 characters' 
-                    value={phone} 
+                    placeholder='Must be 10 characters'
+                    value={phone}
                     onChange={(event) => setPhone(event.target.value)}>
                 </input>
                 {console.log(phone)}
 
                 <label>Support groups:</label>
-                <select 
-                    value={supportGroups} 
+                <select
+                    value={supportGroups}
                     onChange={(event) => setSupportGroups(event.target.value)}>
-                        
-                        <option value={true}>Yes</option>
-                        <option value={false}>No</option>
+
+                    <option value={true}>Yes</option>
+                    <option value={false}>No</option>
                 </select>
                 {console.log(supportGroups)}
 
-                <button 
+                <button
                     onClick={handleSubmit}>
-                        Confirm
+                    Confirm
                 </button>
             </form>
             <br></br>
