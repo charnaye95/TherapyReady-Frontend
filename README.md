@@ -21,7 +21,7 @@ Therapists
 React.js, JSX, JavaScript, CSS, HTML
 
 ## Description
-A one-stop site that makes it easy to find the therapist you are looking for. When someone is seeking therapy, you don't want anything to dissuade them during the search. As of right now, I have yet to see a site that provides the essentials a therapy-seeker is looking for and TherapyReady is my in-progress answer for that.
+A one-stop site that makes it easy to find the clinic or therapist you are looking for. When someone is seeking therapy, you don't want anything to dissuade them during the search. As of right now, I have yet to see a site that provides the essentials a therapy-seeker is looking for and TherapyReady is my in-progress answer for that.
 
 ## Wireframes
 
