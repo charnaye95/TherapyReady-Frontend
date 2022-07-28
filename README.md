@@ -3,9 +3,9 @@
 [Link Deployed on Netlify](https://therapyready.netlify.app/)
  
 ## Screenshots of the app
-![Clinics](/Users/charnaye95/Downloads/Clinics - backend.png "Clinics-backend")
+![Clinics](https://imgur.com/a/dyPO967 "Clinics-backend")
 <br>
-![Therapists](/Users/charnaye95/Downloads/Therapists - backend.png "Therapists-backend")
+![Therapists](https://imgur.com/a/x6yTBW8 "Therapists-backend")
  
 ## Technologies used
 React.js, JSX, JavaScript, CSS, HTML
