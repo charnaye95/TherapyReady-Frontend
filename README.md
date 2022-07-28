@@ -5,7 +5,7 @@
 ## Screenshots of the app
 ![Clinics](https://i.imgur.com/iN4S3ZK.png "Clinics-backend")
 <br>
-![Therapists](https://imgur.com/a/x6yTBW8 "Therapists-backend")
+![Therapists](https://i.imgur.com/riiHwkj.png "Therapists-backend")
  
 ## Technologies used
 React.js, JSX, JavaScript, CSS, HTML
