@@ -25,9 +25,11 @@ A one-stop site that makes it easy to find the therapist you are looking for. Wh
 
 ## Wireframes
 
+<br>
+
 Wireframe for Homepage
 ![Wireframe for homepage](https://i.imgur.com/hO3Lgsv.png)
-
+<br>
 Wireframe for detail page
 ![Wireframe for detail page](https://i.imgur.com/zvjFpoH.png)
  
