@@ -24,8 +24,12 @@ React.js, JSX, JavaScript, CSS, HTML
 A one-stop site that makes it easy to find the therapist you are looking for. When someone is seeking therapy, you don't want anything to dissuade them during the search. As of right now, I have yet to see a site that provides the essentials a therapy-seeker is looking for and TherapyReady is my in-progress answer for that.
 
 ## Wireframes
-[Wireframe for homepage](https://media.git.generalassemb.ly/user/41205/files/6727eae5-2796-473b-89b9-a23d543a2040)
-[Wireframe for detail page](https://media.git.generalassemb.ly/user/41205/files/0c66b1a8-7099-4fe3-bda3-acedc386fc61)
+
+Wireframe for Homepage
+![Wireframe for homepage](https://i.imgur.com/hO3Lgsv.png)
+
+Wireframe for detail page
+![Wireframe for detail page](https://i.imgur.com/zvjFpoH.png)
  
 ## Stretch Goals / Major Hurdles 
 
