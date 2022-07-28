@@ -3,7 +3,7 @@
 [Link Deployed on Netlify](https://therapyready.netlify.app/)
  
 ## Screenshots of the app
-![Clinics](https://imgur.com/a/dyPO967 "Clinics-backend")
+![Clinics](https://i.imgur.com/iN4S3ZK.png "Clinics-backend")
 <br>
 ![Therapists](https://imgur.com/a/x6yTBW8 "Therapists-backend")
  
