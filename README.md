@@ -5,9 +5,11 @@
 ## Screenshots of the app
 <br>
 Clinics
+
 ![Clinics](https://i.imgur.com/iN4S3ZK.png "Clinics-backend")
 <br>
 Therapists
+
 ![Therapists](https://i.imgur.com/xFBvlvJ.png "Therapists-backend")
  
 ## Technologies used
