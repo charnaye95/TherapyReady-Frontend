@@ -24,8 +24,8 @@ import axios from "axios";
 function App() {
   const [clinics, setClinics] = useState(null);
   const [therapists, setTherapists] = useState(null);
-  const clinicUrl = "https://therapyready-backend.herokuapp.com/clinics/";
-  const therapistUrl = "https://therapyready-backend.herokuapp.com/therapists/";
+  const clinicUrl = "https://therapyready-backend.up.railway.app/clinics/";
+  const therapistUrl = "https://therapyready-backend.up.railway.app/therapists/";
   // const { id } = useParams();
   // const navigate = useNavigate();
 
