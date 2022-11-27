@@ -4,7 +4,7 @@ import axios from 'axios'
 
 function DeleteTherapistForm() {
   const { id } = useParams()
-  const singleTherapistUrl = `https://therapyready-backend.herokuapp.com/therapists/${id}`
+  const singleTherapistUrl = `https://therapyready-backend.up.railway.app/therapists/${id}`
 
   const deleteTherapist = () => {
     axios.delete(singleTherapistUrl)
