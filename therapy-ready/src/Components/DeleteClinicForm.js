@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 function DeleteClinicForm() {
 
   const { id } = useParams()
-  const singleClinicUrl = `https://therapyready-backend.up.railway.app/clinics/${id}`
+  const singleClinicUrl = `https://therapyready-backend.herokuapp.com/clinics/${id}`
 
   const deleteClinic = () => {
     axios.delete(singleClinicUrl)

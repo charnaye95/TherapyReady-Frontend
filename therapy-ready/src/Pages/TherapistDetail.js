@@ -4,7 +4,7 @@ import axios from 'axios';
 
 function TherapistDetail() {
     const { id } = useParams()
-    const singleTherapistUrl = `https://therapyready-backend.up.railway.app/therapists/${id}`
+    const singleTherapistUrl = `https://therapyready-backend.herokuapp.com/therapists/${id}`
 
     const [singleTherapist, setSingleTherapist] = useState(null);
 

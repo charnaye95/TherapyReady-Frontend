@@ -5,7 +5,7 @@ import axios from 'axios';
 function UpdateTherapistForm() {
 
   const { id } = useParams()
-  const singleTherapistUrl = `https://therapyready-backend.up.railway.app/therapists/${id}`
+  const singleTherapistUrl = `https://therapyready-backend.herokuapp.com/therapists/${id}`
 
   //states for form
   const [image, setImage] = useState('');
